@@ -10,6 +10,8 @@ sns.set_style("whitegrid")
 
 # retrieving the data
 df = pd.read_excel("skyscrapers.xlsx")
+
+
 def home():
     st.header("Home")
     st.markdown("This application was made for users to learn more about the "
