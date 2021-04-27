@@ -1,18 +1,3 @@
-"""
-Name:       Jame Zou
-CS230:      Section 5
-Data:       skyscrapers.xlsx
-URL:
-
-Description:
-This program produces a streamlit application that analyzes different components of the skyscrapers dataset and
-is organized into 4 pages:
-        Home - introduction & description purposes
-        Locating Structures - map feature
-        Learn More - general facts & statistics featuring several charts
-        Additional Search - select query to view data table based on filtered criteria
-
-"""
 
 import pandas as pd
 import streamlit as st
@@ -97,8 +82,8 @@ def maps(measureChoice):
                                  data=dfMap,
                                  get_position=["Lon", "Lat"],
                                  get_elevation=measureChoice,
-                                 elevation_scale=10,
-                                 radius=100,
+                                 elevation_scale=8,
+                                 radius=115,
                                  get_fill_color=[255, 165, 0, 80],
                                  pickable=True,
                                  extruded=True,
