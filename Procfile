@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run finalproject_zou_jame.py
+web: sh setup.sh && streamlit run tallest_structures.py
