@@ -6,10 +6,11 @@ import numpy as np
 import math
 import pydeck as pdk
 import seaborn as sns
+import openpyxl
 sns.set_style("whitegrid")
 
 # retrieving the data
-df = pd.read_excel("skyscrapers.xlsx")
+df = pd.read_excel("skyscrapers.xlsx", engine='openpyxl')
 
 
 def home():
